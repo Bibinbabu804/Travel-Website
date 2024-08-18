@@ -1,0 +1,548 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #000000;
+    min-height: 2dvb;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 4px black;
+
+text-decoration: none;
+font-size: 20PX;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.6s;
+font-family: "Audiowide", sans-serif;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 15px;
+    transition: 0.6s;
+    font-family: "Playfair Display SC", serif;
+}
+
+header ul li a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 7px 10px 30px rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://wallpaperaccess.com/full/488392.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: aliceblue;
+    font-family: "Rubik Mono One", monospace;
+    letter-spacing: 1PX;
+    margin-bottom: 10px;
+    margin-left: 90px;
+}
+.home-text p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+     margin-bottom: 50px;
+     text-align: justify;
+     margin-left: 90px;
+     font-family: "Kaushan Script", cursive;
+
+}
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: aliceblue;
+    color: #000000ef;
+    border-radius: 10px;
+    transition: ease.40s;
+    text-decoration: none;
+    margin-left: 90px;
+    margin-top: -100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home-btn:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+.container-box{
+  background-color: rgb(255, 255, 255);
+        border: 1px solid #f0eded;
+        padding: 50px 10px;
+        border-radius: 4px;
+        transition: all 1s ease 0s;
+        cursor: pointer;
+    }
+.container-image img{
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    background: var(--bg-color);
+    box-shadow: 5px 10px 30px rgb(64, 86, 180);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer; 
+
+
+}
+#heading{
+    font-size: 40px;
+    margin-left: 30%;
+   padding-top: 50px;
+    margin-bottom: 40px;
+    font-family: "Playball", cursive;
+
+    
+}
+
+
+.container-box h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: "Dancing Script", cursive;
+}
+.container-box p{
+    font-size: 15px;
+    color: black;
+}
+.container-box:hover{
+    box-shadow: 5px 30px 56.127px rgba(55, 55, 55, 0.089);
+    border: 1px solid transparent;
+    transform: translateY(-6px);
+}
+
+.title{
+    text-align: center;
+    padding: 30px;
+}
+.title h2{
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: "Playball", cursive;
+    padding-top: 30px;
+}
+
+.package-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+
+    margin-top: 5rem;
+}
+.thum{
+    position: relative;
+    transition: all .3s cubic-bezier(.455,.05,.55,.95);
+    will-change: filter;
+    cursor: pointer;
+}
+.thum img{
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.thum h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    color: rgb(0, 0, 0);
+   
+    top: 36px;
+   right: 40px;
+   font-family: "Kalam", cursive;
+   
+   
+}
+.dest-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+.stars i{
+    color: rgb(241, 238, 28);
+    font-size: 15px;
+    margin-left: 10px;
+
+
+}
+.location h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: "Kalam", cursive;
+}
+.location p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Dancing Script", cursive;
+}
+.thum:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}
+
+/* destination */
+
+.destination-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.col-content{
+    position: relative;
+}
+.col-content img{
+    width: 80%;
+    height: auto
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(80%);
+    transition: all .3s cubic-bezier(.455,.05,.55,.95);
+    margin-left: 10%;
+}
+
+.col-content h5{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    left: 15px;
+    bottom: 60px;
+    margin-left: 20%;
+    font-family: "Audiowide", sans-serif;
+
+}
+.col-content p{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(219, 14, 14);
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+    margin-left: 20%;
+}
+
+.col-content img:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+
+}
+
+
+
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    border-color: 10px, black;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000c5;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000a4;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    height: 40px;
+}
+
+button[type="submit"] {
+    background-color: #140a6ef5;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* newnewsletter */
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 3rem;
+    margin: 100px;
+}
+.news-text h2{
+    font-size: 25px;
+       font-family: "Rubik Mono One", monospace;
+
+    margin-left: 250px;
+
+}
+.news-text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.685);
+    margin-left: 250px;
+    font-family: "Playball", cursive;
+    
+}
+
+.newsletter form{
+    max-width: 100%;
+    width: 400px;
+    position: relative;
+    margin-right: 100px;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 30px 56.127px rgb(55 55 55 /12%);
+    outline: none;
+    border: 1px black;
+    border-radius: 15px;
+}
+.newsletter form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 15px;
+    background-color: rgba(7, 7, 75, 0.842);
+    color: aliceblue;
+    top: 10%;
+    right: 6px;
+    cursor: pointer;
+
+}
+
+
+/* footer/ */
+
+.end{
+    background-color: rgb(4, 3, 46);
+   
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    padding: 20px;
+    
+}
+.list{
+    width: 25%;
+}
+.list h4{
+    font-size: 18px;
+    color: rgb(255, 254, 254);
+    margin-bottom: 30px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+
+    margin-left: 28px;
+
+}
+
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background-color: ;
+}
+.list ul li:not(:last-child){
+    margin-bottom: 16px;
+    
+}
+
+.list ul li a{
+    color: aliceblue;
+    font-size: 13px;
+    font-family: "Libre Baskerville", serif;
+    text-decoration: none;
+    text-align: justify;
+    
+
+      font-family: "EB Garamond", serif;
+
+   
+
+}
+.list ul li{
+    list-style: none;
+}
+
+
+.list ul li a:hover{
+    color: red;
+    transform: translate(14px);
+}
+
+.social a{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin: 10px;
+    color: rgb(13, 4, 95);
+    text-decoration: none;
+
+}
+.social a:hover{
+    transform: scale(1.26);
+}
+
+.end-text{
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+
+
+.end-text p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.459);
+    letter-spacing: 1px;
+}
+
+
+
+
